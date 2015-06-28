@@ -15,7 +15,7 @@ namespace Facebook_Messenger
 		/// Designer variable used to keep track of non-visual components.
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
-		private System.Windows.Forms.WebBrowser webBrowser1;
+		public System.Windows.Forms.WebBrowser mainBrowser;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -39,26 +39,28 @@ namespace Facebook_Messenger
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-			this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+			this.mainBrowser = new System.Windows.Forms.WebBrowser();
 			this.SuspendLayout();
 			// 
 			// webBrowser1
 			// 
-			this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.webBrowser1.Location = new System.Drawing.Point(0, 0);
-			this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-			this.webBrowser1.Name = "webBrowser1";
-			this.webBrowser1.ScrollBarsEnabled = false;
-			this.webBrowser1.Size = new System.Drawing.Size(722, 535);
-			this.webBrowser1.TabIndex = 0;
-			this.webBrowser1.Url = new System.Uri("http://www.messenger.com", System.UriKind.Absolute);
+			this.mainBrowser.AllowNavigation = false;
+			this.mainBrowser.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.mainBrowser.IsWebBrowserContextMenuEnabled = false;
+			this.mainBrowser.Location = new System.Drawing.Point(0, 0);
+			this.mainBrowser.MinimumSize = new System.Drawing.Size(20, 20);
+			this.mainBrowser.Name = "webBrowser1";
+			this.mainBrowser.ScrollBarsEnabled = false;
+			this.mainBrowser.Size = new System.Drawing.Size(722, 535);
+			this.mainBrowser.TabIndex = 0;
+			this.mainBrowser.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.WebBrowser1DocumentCompleted);
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(722, 535);
-			this.Controls.Add(this.webBrowser1);
+			this.Controls.Add(this.mainBrowser);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "MainForm";
 			this.Text = "Facebook Messenger";
@@ -66,8 +68,5 @@ namespace Facebook_Messenger
 
 		}
 		
-		private void WebBrowser1DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e) {
-			
-		}
 	}
 }
