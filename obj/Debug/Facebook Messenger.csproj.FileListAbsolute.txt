@@ -1,0 +1,8 @@
+D:\Dev\Source\CS\FacebookMessenger\Facebook Messenger\bin\Debug\Facebook Messenger.exe.config
+D:\Dev\Source\CS\FacebookMessenger\Facebook Messenger\bin\Debug\Facebook Messenger.exe
+D:\Dev\Source\CS\FacebookMessenger\Facebook Messenger\bin\Debug\Facebook Messenger.pdb
+D:\Dev\Source\CS\FacebookMessenger\Facebook Messenger\obj\Debug\Facebook Messenger.csprojResolveAssemblyReference.cache
+D:\Dev\Source\CS\FacebookMessenger\Facebook Messenger\obj\Debug\Facebook Messenger.exe
+D:\Dev\Source\CS\FacebookMessenger\Facebook Messenger\obj\Debug\Facebook Messenger.pdb
+D:\Dev\Source\CS\FacebookMessenger\Facebook Messenger\obj\Debug\Facebook_Messenger.MainForm.resources
+D:\Dev\Source\CS\FacebookMessenger\Facebook Messenger\obj\Debug\Facebook Messenger.csproj.GenerateResource.Cache
