@@ -42,14 +42,13 @@ namespace Facebook_Messenger
 			this.mainBrowser = new System.Windows.Forms.WebBrowser();
 			this.SuspendLayout();
 			// 
-			// webBrowser1
+			// mainBrowser
 			// 
-			this.mainBrowser.AllowNavigation = false;
 			this.mainBrowser.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.mainBrowser.IsWebBrowserContextMenuEnabled = false;
 			this.mainBrowser.Location = new System.Drawing.Point(0, 0);
 			this.mainBrowser.MinimumSize = new System.Drawing.Size(20, 20);
-			this.mainBrowser.Name = "webBrowser1";
+			this.mainBrowser.Name = "mainBrowser";
 			this.mainBrowser.ScrollBarsEnabled = false;
 			this.mainBrowser.Size = new System.Drawing.Size(722, 535);
 			this.mainBrowser.TabIndex = 0;

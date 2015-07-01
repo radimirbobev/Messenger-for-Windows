@@ -39,8 +39,8 @@ namespace Facebook_Messenger
 		// Fix for WebBrowser component memory leak
 		// Source: http://stackoverflow.com/a/6258063
 		private void CleanUp( object source, ElapsedEventArgs e ) {
-			IntPtr pHandle = GetCurrentProcess();
-      		SetProcessWorkingSetSize(pHandle, -1, -1);
+			//IntPtr pHandle = GetCurrentProcess();
+      		//SetProcessWorkingSetSize(pHandle, -1, -1);
 		}
 	}
 }
